@@ -107,4 +107,4 @@ with st.form("tweet_form"):
             st.write("Adding 1-2 hashtags may help.")
         else:
             st.write("Your hashtag count is in a good range.")
-        st.caption("Note: This is a predictive model trained on historical data. Predictions are probabilistic, not guarantees.")st.caption("Note: This is a predictive model trained on historical data. Predictions are probabilistic, not guarantees.")
+        st.caption("Note: This is a predictive model trained on historical data. Predictions are probabilistic, not guarantees.")
