@@ -5,7 +5,7 @@ import joblib
 import gzip
 
 with gzip.open("tweetboost_model.joblib.gz","rb") as f:
-    model=joblib(f)
+    model=joblib.load(f)
 model_columns=joblib.load("model_columns.joblib")
 
 st.title("🐦 TweetBoost")
