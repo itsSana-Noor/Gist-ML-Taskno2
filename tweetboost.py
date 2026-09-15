@@ -2,8 +2,10 @@ import streamlit as st
 import pandas as pd
 import numpy as np 
 import joblib 
+import gzip
 
-model=joblib.load("tweetboost_model.joblib")
+with gzip.open("tweetboost_model.joblib.gz","rb") as f:
+    model=joblib(f)
 model_columns=joblib.load("model_columns.joblib")
 
 st.title("🐦 TweetBoost")
